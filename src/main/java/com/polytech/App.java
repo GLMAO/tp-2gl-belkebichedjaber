@@ -15,13 +15,13 @@ public class App
     public static void main( String[] args )
     {
         GestionnaireEmploiDuTemps a=new GestionnaireEmploiDuTemps();
-        Etudiant e1=new Etudiant("Djaber");
-        Responsable r1=new Responsable("issam");
-        a.attach(r1);
-        a.attach(e1);
-        Cours cours = new CoursBuilder().setMatiere("Maths").setEnseignant("Mr. Ali").setSalle("B12").build();
+        Etudiant eleve=new Etudiant("belkebiche");
+        Responsable prof=new Responsable("merzougi");
+        a.attach(prof);
+        a.attach(eleve);
+        Cours cours = new CoursBuilder().setEnseignant("mohamed").setSalle("B42").build();
         a.ajouterCours(cours);
-        a.modifierCours(cours, "Heure changée à 11:00");
+        a.modifierCours(cours, "Heure changée à 14:00");
         Cours c = new CoursBuilder().setEnseignant("ens").setMatiere("Genie_logiciel").build();
         System.out.println(c.getDescription());
 
