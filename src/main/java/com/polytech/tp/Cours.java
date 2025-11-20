@@ -33,7 +33,8 @@ public class Cours implements ICours {
         return 1.5; 
     }
     
-    
+   
     public String getMatiere() { return matiere; }
     public String getEnseignant() { return enseignant; }
+    
 }
